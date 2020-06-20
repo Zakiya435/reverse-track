@@ -28,10 +28,7 @@ function draw()
     enemy.x = Math.round(random(10, 390));
   }
   
-  if(enemy.x - car.x < car.width / 2 + enemy.width / 2 &&
-    car.x - enemy.x < car.width / 2 + enemy.width / 2 &&
-    enemy.y - car.y < car.height / 2 + enemy.height / 2 &&
-    car.y - enemy.y < car.height / 2 + enemy.height / 2) 
+  if(enemy.x - car.x < 5&&car.x - enemy.x < 5 &&enemy.y - car.y < 5&&enemy.y - car.y < 5)
   {
 
       gameState = 0;
